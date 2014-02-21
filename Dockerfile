@@ -32,6 +32,9 @@ RUN mkdir /opt/local || echo 'Local directory exists already'
 # Clone tmux code repository
 RUN git clone git://git.code.sf.net/p/tmux/tmux-code /opt/src/tmux-code
 
+# Fetch latest modifications in case the script should be re-run
+RUN cd /opt/src/tmux-code && git fetch --all
+
 # Checkout latest tmux tag
 RUN cd /opt/src/tmux-code && git checkout tags/1.9
 
