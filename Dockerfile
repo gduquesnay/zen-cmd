@@ -33,7 +33,7 @@ RUN mkdir /opt/local || echo 'Local directory exists already'
 RUN git clone git://git.code.sf.net/p/tmux/tmux-code /opt/src/tmux-code
 
 # Checkout latest tmux tag
-RUN cd /opt/src/tmux-code && git checkout tags/1.8
+RUN cd /opt/src/tmux-code && git checkout tags/1.9
 
 # Install tmux dependencies
 RUN apt-get install -y -q libncurses5-dev libevent-dev
