@@ -1,4 +1,0 @@
-Host zen-cmd
-Hostname zen-cmd
-User theodoer
-IdentityFile ~/.ssh/zen-cmd
